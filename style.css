@@ -1,0 +1,417 @@
+html, body {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    background-color: #1C1C1C;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+body {
+    width: 550px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #1F2937;
+    color:  #FFFFFF;
+    padding-top:118px;
+    padding-bottom: 19px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.025em;
+    width: 354px;
+    margin: 0;
+    margin-left: 52px
+
+}
+
+h1 > span {
+    color: #F59E0B;
+
+}
+
+body > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #D5D4D8;
+    margin-left: 52px
+}
+
+.length {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: #D5D4D8;
+    margin-left: 52px
+    
+}
+
+body > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 223px;
+    height: 42px;
+    background-color: #F59E0B;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-left: 52px
+    
+}
+
+.length > button {
+    background-color: #F59E0B;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0 10px;
+}
+
+#passwordLength {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px
+}
+
+body > button > img {
+    margin-right: 5px;
+}
+
+hr {
+    width: 446px;
+    height: 1px;
+    background-color: #2F3E53;
+    padding: 0;
+    margin: 35px 0;
+    border: none;
+    margin-left: 52px
+}
+
+.passwords {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 52px
+}
+
+.passwords > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #202B3C;
+    width: 211px;
+    height: 39px;
+    left: 52px;
+    top: 399px;
+    background-color: #273549;
+    border-radius: 6px;
+    margin-right: 24px;
+    margin-bottom: 27px;
+    cursor: pointer
+}
+
+#copied {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #071013;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 12px;
+    z-index: 1;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+
+.copiedOne {
+    opacity: 0;
+}
+
+.copiedAlert {
+    position: relative;
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #071013;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 12px;
+    z-index: 1;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    opacity: 1;
+    animation-name: clearCopy;
+    animation-duration: 2s;
+    animation-fill-mode: forwards
+}
+
+
+@keyframes clearCopy {
+    100% {
+        opacity: 0
+    }
+}
+
+@media screen and (max-width: 550px) {
+    html, body {
+        margin: 0;
+        padding: 0
+    }
+    
+    html {
+        width: 100%;
+        background-color: #1C1C1C;
+        height: 100vh;
+        display: flex;
+        align-items: flex-start;
+    }
+    
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: #1F2937;
+        color:  #FFFFFF;
+
+       
+        border-radius: 5px;
+    }
+    
+    h1 {
+        font-family: 'Karla';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.025em;
+        width: 85%;
+        margin: 0;
+        margin-left: 25px;
+        padding: 0;
+     
+        
+    }
+    
+    h1 > span {
+        color: #F59E0B;
+        
+    
+    }
+    
+    body > p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #D5D4D8;
+        margin-left: 25px;
+
+    }
+    
+    .length {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 28px;
+        color: #D5D4D8;
+        margin-left: 25px
+        
+    }
+    
+    body > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 223px;
+        height: 42px;
+        background-color: #F59E0B;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin-left: 25px
+        
+    }
+    
+    .length > button {
+        background-color: #F59E0B;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        border-radius: 50%;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin: 0 10px;
+    }
+    
+    #passwordLength {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px
+    }
+    
+    body > button > img {
+        margin-right: 5px;
+    }
+    
+    hr {
+        width: 100%;
+        height: 1px;
+        background-color: #2F3E53;
+        padding: 0;
+        margin: 35px 0;
+        border: none;
+        
+    }
+    
+    .passwords {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 25px;
+
+    }
+    
+    .passwords > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #202B3C;
+        width: 220px;
+        height: 39px;
+        left: 52px;
+        top: 399px;
+        background-color: #273549;
+        border-radius: 6px;
+        margin-right: 24px;
+        margin-bottom: 27px;
+        cursor: pointer;
+        
+    }
+    
+    #copied {
+        position: relative;
+        width: 150px;
+        height: 30px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #071013;
+        border-radius: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 12px;
+        z-index: 1;
+        margin-top: -50px;
+        margin-bottom: 10px;
+    }
+    
+    .copiedOne {
+        opacity: 0;
+    }
+    
+    .copiedAlert {
+        position: relative;
+        width: 150px;
+        height: 30px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #071013;
+        border-radius: 10px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 12px;
+        z-index: 1;
+        margin-top: -50px;
+        margin-bottom: 10px;
+        opacity: 1;
+        animation-name: clearCopy;
+        animation-duration: 2s;
+        animation-fill-mode: forwards
+    }
+    
+    
+    @keyframes clearCopy {
+        100% {
+            opacity: 0
+        }
+    }
+  }

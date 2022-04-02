@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Karla:ital@0;1&display=swap" rel="stylesheet">
+        <title>Password Generator</title>
+        <link rel="stylesheet" href="./style.css"/>
+    </head>
+    <body>
+        <h1>Generate a <br><span>random password</span></h1>
+        <p>Never use an insecure password again.</p>
+        <div class="length">
+            <p>Password Length:</p>
+            <button id="minus" onclick="restLength()">-</button>
+            <p id="passwordLength">10</p>
+            <button id="plus" onclick="addLength()">+</button>
+        </div>
+        <button id="generate" onclick="generate()">
+            <img src="./img/lightning.png" />
+            Generate Password
+        </button>
+        <hr>
+        <div id="copied" class="copiedOne">Copied to Clipboard !</div>
+        <div class="passwords">
+            <div title="Copy to Clipboard" onclick="copy()"><p id="passwordOne">&#8226&#8226&#8226</p></div>
+            <div title="Copy to Clipboard" onclick="copyTwo()"><p id="passwordTwo">&#8226&#8226&#8226</p></div>
+        </div>
+        <div class="passwords">
+            <div title="Copy to Clipboard" onclick="copyThree()"><p id="passwordThree">&#8226&#8226&#8226</p></div>
+            <div title="Copy to Clipboard" onclick="copyFour()"><p id="passwordFour">&#8226&#8226&#8226</p></div>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
